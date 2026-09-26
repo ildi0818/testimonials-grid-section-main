@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed';
+}
+
+body {
+    background-color: hsl(214, 17%, 92%);
+}
+
+.container {
+    display: grid;
+    padding-block: 1rem;
+    /* padding-inline: clamp(10px, 2.5vw, 30px); */
+    gap: 1.5rem;
+    width: min(87%, 70rem);
+    margin-inline: auto;
+    min-height: 100vh;
+    align-content: center;
+}
+
+.card {
+    padding-block: clamp(8px, 1.5vw, 25px);
+    padding-inline: clamp(10px, 2vw, 25px);
+    font-size: 0.8125rem;
+    /* font-size: clamp(0.8rem, 1vw, 0.8125rem); */
+    border-radius: 10px;
+    min-width: 0;
+}
+
+/* .card p {
+    overflow-wrap: break-word;
+} */
+
+.studentData {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+}
+
+.studentData > div {
+    min-width: 0;
+}
+
+.daniel .studentData,
+.daniel .bold,
+.daniel > p:last-child {
+    position: relative;
+    z-index: 1;
+}
+
+.daniel .photo {
+    border-radius: 100%;
+    width: clamp(25px, 3vw, 40px);
+    margin-right: clamp(5px, 1.5vw, 20px);
+    border: 3px solid hsl(264, 66%, 62%);
+}
+
+.jonathan .photo {
+    border-radius: 100%;
+    width: clamp(25px, 3vw, 40px);
+    margin-right: clamp(5px, 1.5vw, 20px);
+    border: 3px solid hsl(216, 11%, 50%);
+}
+
+.jeanette .photo,
+.kira .photo {
+    border-radius: 100%;
+    width: clamp(25px, 3vw, 40px);
+    margin-right: clamp(5px, 1.5vw, 20px);
+    border: 3px solid hsl(214, 17%, 92%);
+}
+
+.patrick .photo {
+    border-radius: 100%;
+    width: clamp(25px, 3vw, 40px);
+    margin-right: clamp(5px, 1.5vw, 20px);
+    border: 3px solid hsl(218, 23%, 23%);
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.qualification {
+    /* font-size: clamp(0.55rem, 1vw, 08125rem); */
+    font-size: 0.8125rem;
+    font-weight: 200;
+}
+
+.quotation {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    display: none;
+    /* opacity: 0.35; */
+
+    z-index: -1;
+    /* asztali nézeten media query-ben */
+}
+
+.bold {
+    margin-bottom: 15px;
+    font-weight: 500;  
+    font-size: clamp(1rem, 1.54vw, 1.54rem);
+    /* font-size: 1.2rem;  */
+}
+
+.daniel,
+.jonathan,
+.patrick {
+    color: hsl(0, 0%, 100%);
+
+}
+
+.jeanette,
+.kira {
+    color: hsl(217, 19%, 35%);
+}
+
+.daniel {
+    background-color: hsl(263, 55%, 52%);
+    position: relative;
+    isolation: isolate;
+}
+
+.jonathan {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.jeanette {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.patrick {
+    background-color: hsl(219, 29%, 14%);
+}
+
+.kira {
+    background-color: hsl(0, 0%, 100%);
+}
+
+@media screen and (min-width: 610px) {
+    
+    .container {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        column-gap: clamp(8px, 1.5vw, 24px);
+        row-gap: clamp(10px, 1.5vw, 24px);    
+        /* grid-auto-rows: minmax(0, auto); */
+        /* width: min(95%, 70rem); */
+    }
+    
+    .card {
+        padding: clamp(10px, 2vw, 25px);
+        font-size: clamp(0.65rem, 1vw, 00.8125rem);
+        /*padding-block: clamp(8px, 1.5vw, 25px);
+        padding-inline: clamp(10px, 2vw, 25px);
+        border-radius: 10px;
+        min-width: 0;*/ 
+    } 
+
+    .bold {
+        font-size: clamp(0.8rem, 1.54vw, 1.54rem);
+    }
+
+    .daniel {
+        grid-column: span 2;
+    }
+
+    .jonathan {
+        grid-column: span 1;
+    }
+
+    .jeanette {
+        grid-column: span 1;
+    }
+
+    .patrick {
+        grid-column: span 2;
+    }
+
+    .kira {
+        grid-column: 4;
+        grid-row: 1 / 3;
+    }
+
+    .quotation {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
